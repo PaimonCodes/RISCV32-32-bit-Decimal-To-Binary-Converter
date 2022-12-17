@@ -37,6 +37,7 @@ _start:
     ecall
     addi t0, s3, -0x1         # The range of the used stack is [0(sp) - [bits_amount - 1](sp)] inclusive
     jal printResult           # Print the stored binary values off the stack
+    addi sp, sp, s3           # Release stack
 
     jal x0, Exit
 
