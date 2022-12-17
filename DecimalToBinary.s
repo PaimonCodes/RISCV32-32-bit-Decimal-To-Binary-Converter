@@ -16,9 +16,6 @@
 .globl _start
 
 _start:
-    # Print Input = ###
-    jal showInput
-
     # Calculate the amount of bits will be represented
     lw s0, integer
     mv t0, s0
@@ -42,23 +39,6 @@ _start:
     jal printResult           # Print the stored binary values off the stack
 
     jal x0, Exit
-
-showInput:
-    # Print input string
-    li a0, 0x4
-    la a1, input
-    ecall
-
-    # Print the input integer value
-    li a0, 0x1
-    lw a1, integer
-    ecall
-    
-    # Print newline
-    li a0, 0x4
-    la a1, newline
-    ecall
-    jalr ra
 
 log2n:
     # log2n algorithm
