@@ -1,4 +1,4 @@
-# Decimal To Binary Converter (32-bits)
+# Integer To Binary Converter (32-bits)
 This program converts a 32-bit unsigned integer into its binary representation.
 
 ## Functionality
