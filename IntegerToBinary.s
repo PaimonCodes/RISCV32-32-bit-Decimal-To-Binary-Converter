@@ -1,6 +1,5 @@
 ##
-## ***REMOVED***
-## 32-bit Decimal to Binary Converter 
+## 32-bit Integer to Binary Converter 
 
 # assign s1 = quotient, s2 = remainder, s3 = amount of bits, t1 = 2 = divisor
 
@@ -55,13 +54,13 @@ convertToBinary:    # Positive integer to binary conversion process
     
     # Store in stack the remainder
     add s4, t0, sp
-    sb s2, 0(s4)                # issue is overextending on last iteration
+    sb s2, 0(s4)                
     addi t0, t0, 0x1
 
     # Reset division parameters for next possible iteration
     add t3, x0, x0              # Reset t3 repetion iterator
     addi t1, x0, 0x2            # Reset t1 divisor = 2 (binary)
-    mv s0, s1                   # Set new divided to be the quotient
+    mv s0, s1                   # Set new dividend to be the quotient
 
     # Check if quotient is 0, if it is not, continue dividing by 2
     bne s1, x0, convertToBinary 
@@ -127,6 +126,9 @@ printResult:
     lb a1, 0(t1)
     ecall
     addi t0, t0, -1
+
+    # Check if all items in stack are printed
+    # If not, continue printing
     bge t0, x0, printResult
 
     # Print newline
