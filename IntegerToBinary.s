@@ -1,12 +1,12 @@
 ##
 ## 32-bit Integer to Binary Converter 
 
+
 # assign s1 = quotient, s2 = remainder, s3 = amount of bits, t1 = 2 = divisor
 
 .data
     integer: .word 4294967295            # values from 0 to 4294967295
 
-    input: .string "Input = "
     output: .string "Binary = "
     newline: .string "\n"
 
