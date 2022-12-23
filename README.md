@@ -54,7 +54,7 @@ flowchart TD;
 
 
 4. Choose the integer to be converted and edit the integer data.
-https://github.com/PaimonCodes/RISCV32-32-bit-Integer-To-Binary-Converter/blob/5cbdbedaf22fb9f84a197a75ca732df6ac8c3194/DecimalToBinary.s#L7-L8
+https://github.com/PaimonCodes/RISCV32-32-bit-Integer-To-Binary-Converter/blob/eacb707dce7f64c126272bbb78486e036e18508a/IntegerToBinary.s#L7-L8
 
 
 5. Press F5 or go to `Run` and `Start Debugging`. The binary output will be in the Venus Terminal `Terminal - New Terminal`.
