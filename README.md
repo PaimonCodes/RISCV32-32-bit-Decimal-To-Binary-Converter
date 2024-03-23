@@ -1,5 +1,19 @@
 # Integer To Binary Converter (32-bits)
-This program converts a 32-bit unsigned integer into its binary representation.
+This program converts a 32-bit unsigned integer ( 0 to 4,294,967,295 ) into its binary representation.
+
+## Basics of Integer to Binary Conversion
+Integer can be converted to binary by sequentially dividing by 2 until a quotient results into 0. The resulting binary form is read from the remainders of each step from the last division to the first.
+The process is better explained by an example such as the one below.
+
+Converting _18_ to binary:
+
+**First division**: 18 $\div$ 2 = **9** remainder **0**<br>
+**Second division**: **9** $\div$ 2 = **4** remainder **1**<br>
+**Third division**: **4** $\div$ 2 = **2** remainder **0**<br>
+**Fourth division**: **2** $\div$ 2 = **1** remainder **0**<br>
+**Fifth division**: **1** $\div$ 2 = 0 remainder **1**<br>
+
+Thus, the resulting binary form of _18_ is **10010**.
 
 ## Functionality
 ```mermaid
